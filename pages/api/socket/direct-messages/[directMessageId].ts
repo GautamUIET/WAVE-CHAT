@@ -1,3 +1,5 @@
+export const dynamic = "force-dynamic";
+
 import { NextApiRequest } from "next";
 import { MemberRole } from "@prisma/client";
 
@@ -122,3 +124,4 @@ export default async function handler(
     return res.status(500).json({ error: "Internal Server Error" });
   }
 }
+

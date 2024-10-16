@@ -2,7 +2,7 @@ import {NextApiRequest} from 'next'
 import { NextApiResponseServerIo } from '@/types'
 import { currentProfilepage } from '@/lib/current-profile-pages';
 import { db } from '@/lib/db';
-
+export const dynamic = "force-dynamic";
 export default async function handler(
     req: NextApiRequest,
     res: NextApiResponseServerIo

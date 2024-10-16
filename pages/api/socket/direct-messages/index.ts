@@ -1,3 +1,6 @@
+
+
+export const dynamic = "force-dynamic";
 import { NextApiRequest } from "next";
 
 import { NextApiResponseServerIo } from "@/types";
