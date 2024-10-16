@@ -55,10 +55,12 @@ export async function GET(req: Request) {
       });
     }
 
-    let nextCursor = null;
+    // Correctly set nextCursor, ensuring type compatibility
+    let nextCursor: string | null = null;
 
     if (messages.length === MESSAGES_BATCH) {
-      nextCursor = messages[MESSAGES_BATCH - 1].id;
+      const lastMessage = messages[messages.length - 1]; // Get the last message
+      nextCursor = lastMessage.id; // Assign id to nextCursor
     }
 
     return NextResponse.json({ items: messages, nextCursor });

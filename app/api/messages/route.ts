@@ -66,7 +66,7 @@ export async function GET(
             });
         }
         
-        let nextCursor = null;
+           let nextCursor: string | null = null;
         if(messages.length === MESSAGE_BATCH){
             nextCursor = messages[MESSAGE_BATCH - 1].id;
         }
