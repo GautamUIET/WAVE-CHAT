@@ -5,10 +5,6 @@
      "@typescript-eslint/no-empty-interface": "off",
     "no-console": "off", // Disables console warnings globally
     "react/no-unescaped-entities": "off", // Disables unescaped entity warnings in React
-    "no-unused-vars": "warn", // Changes unused variables to a warning instead of an error
-
-    // You can add more custom rules here
-    // For example, this one enforces the use of double quotes for strings
-    "quotes": ["error", "double"]
+    "no-unused-vars": "warn"
   }
 }
