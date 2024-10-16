@@ -34,7 +34,7 @@ const findConversation = async (
       }
     });
   } catch (error) {
-    return null;
+    return error;
   }
 };
 
@@ -58,6 +58,6 @@ const createNewConversation = async (
       }
     });
   } catch (error) {
-    return null;
+    return error;
   }
 };

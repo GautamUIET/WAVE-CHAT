@@ -11,7 +11,6 @@ import { useRouter } from "next/navigation";
 import { Form, FormControl, FormField, FormItem } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { useModal } from "@/hooks/use-modal-store";
-import { Smile } from "lucide-react";
 import { EmojiPicker } from "../modals/emoji-picker";
 interface ChatInputProps {
   apiUrl: string;

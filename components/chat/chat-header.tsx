@@ -1,4 +1,4 @@
-import { Hash, Menu } from 'lucide-react';
+import { Hash} from 'lucide-react';
 import React from 'react';
 import { MobileToggle } from '../mobile-toggle';
 import UserAvatar from '../user-avatar';
@@ -27,7 +27,7 @@ export const ChatHeader = ({
             <Hash className = "w-5 h-5 text-zinc-500 dark:text-zinc-400 mr-2" />
            )
          }
-         
+
          {
             type === "conversation" && (
                 <UserAvatar

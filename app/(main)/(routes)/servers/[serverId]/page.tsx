@@ -2,7 +2,7 @@ import { currentProfile } from '@/lib/current-profile'
 import { db } from '@/lib/db'
 import { redirectToSignIn } from '@clerk/nextjs/server'
 import { redirect } from 'next/navigation'
-import React from 'react'
+
 
 interface props{
   params:{

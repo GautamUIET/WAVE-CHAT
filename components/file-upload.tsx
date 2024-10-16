@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { File, FileIcon, X } from "lucide-react";
+import {  FileIcon, X } from "lucide-react";
 import Image from "next/image";
 import { UploadDropzone } from "@/lib/uploadthing";
 

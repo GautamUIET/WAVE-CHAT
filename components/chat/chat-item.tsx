@@ -2,7 +2,7 @@
 import { Member, MemberRole, Profile } from "@prisma/client";
 import UserAvatar from "../user-avatar";
 import { ActionTooltip } from "../action-tooltip";
-import {  Edit, File, FileIcon, ShieldAlert, ShieldCheck, Trash } from "lucide-react";
+import {  Edit, FileIcon, ShieldAlert, ShieldCheck, Trash } from "lucide-react";
 import Image from "next/image";
 import { useEffect, useState } from "react";   
 import axios from "axios";
@@ -68,7 +68,6 @@ export const ChatItem = ({
 
       const [fileType, setFileType] = useState<string | null>(null);
       const [isEditing, setIsEditing] = useState(false);
-      const [isDeleting, setIsDeleting] = useState(false);
         const { onOpen } = useModal();
 
   const params = useParams();
