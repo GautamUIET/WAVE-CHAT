@@ -2,6 +2,7 @@
   "extends": ["next/core-web-vitals", "next/typescript"],
   "rules": {
     // Example of disabling some rules
+     "@typescript-eslint/no-empty-interface": "off",
     "no-console": "off", // Disables console warnings globally
     "react/no-unescaped-entities": "off", // Disables unescaped entity warnings in React
     "no-unused-vars": "warn", // Changes unused variables to a warning instead of an error
